@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function getCookie(name) {
+      var cookieArr = document.cookie.split(";");
+      for (var i = 0; i < cookieArr.length; i++) {
+        var cookiePair = cookieArr[i].split("=");
+        if (name == cookiePair[0].trim()) {
+          return decodeURIComponent(cookiePair[1]);
+        }
+      }
+      return null;
+    }
+
+    function checkCookie() {
+      var coocki = getCookie("logedIn");
+      if (coocki == null) {
+        location = "index.html";
+      }
+    }
+    checkCookie();
+  </script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />

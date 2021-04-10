@@ -5,7 +5,7 @@ const DATA_API = "../json/users.json";
 
 heading.innerText = "Users";
 
-checkCookie();
+
 const addData = async () => {
   const res = await fetch(DATA_API);
   const data = await res.json();
@@ -27,20 +27,5 @@ const addData = async () => {
 
 addData();
 
-function getCookie(name) {
-  var cookieArr = document.cookie.split(";");
-  for (var i = 0; i < cookieArr.length; i++) {
-    var cookiePair = cookieArr[i].split("=");
-    if (name == cookiePair[0].trim()) {
-      return decodeURIComponent(cookiePair[1]);
-    }
-  }
-  return null;
-}
 
-function checkCookie() {
-  var coocki = getCookie("logedIn");
-  if (coocki == null) {
-    location = "index.html";
-  }
-}
+
