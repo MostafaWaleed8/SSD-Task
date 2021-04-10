@@ -8,13 +8,19 @@
   {
     "id": 2,
     "email": "admin@ssd.com",
-    "name": "admin",
-    "password": "admin"
+    "name": "mostafa",
+    "password": "mostafa"
   },
   {
     "id": 3,
     "email": "admin@ssd.com",
     "name": "ahmed",
-    "password": "123"
+    "password": "ahmed"
+  },
+  {
+    "id": 3,
+    "email": "admin@ssd.com",
+    "name": "mohamed",
+    "password": "mohamed"
   }
 ]
