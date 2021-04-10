@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
         console.log("YES");
         state = 1;
         setCookie("logedIn", "true", 1);
-        window.location.replace("../admin.html");
+        window.location.replace("../index.html");
         break;
       }
     }
